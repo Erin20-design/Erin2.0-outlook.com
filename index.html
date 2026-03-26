@@ -332,15 +332,15 @@
   <script>
     window.STORE_CONFIG = {
       contractTitle: "寵物美容服務定型化契約",
-      storeName: "XX寵物有限公司",
-      storeAddress: "XXXXX",
-      storeLine: "@xxxxxxx",
-      liffId: "你的Liff ID",
-      googleScriptUrl: "你部署的網址",
-      sharedSecret: "自訂密碼",
-      storeVetName: "XX動物醫院",
-      storeVetAddress: "地址",
-      storeVetPhone: "電話"
+      storeName: "小毛怪寵物生活坊",
+      storeAddress: "雲林縣斗六市大同路71號",
+      storeLine: "@179rnzsy",
+      liffId: "2009601071-Rqc2suSI",
+      googleScriptUrl: "https://script.google.com/macros/s/AKfycby2EooAaE30fqpVHmO5pNcHvn1TtCxaV1pV2DiHWMQ8Ehud6t0MgAVbYA_wIzfHsAs/exec",
+      sharedSecret: "055379690",
+      storeVetName: "佑安動物醫院",
+      storeVetAddress: "雲林縣斗六市永安路110號",
+      storeVetPhone: "055321230"
     };
   </script>
 
@@ -358,9 +358,9 @@
       <div class="title" id="pageTitle">寵物美容服務定型化契約</div>
       <div class="infoBox">
         <div class="meta">
-          公司名稱：<span id="storeNameText">XX寵物有限公司</span><br>
-          營業地址：<span id="storeAddressText">XXXXX</span><br>
-          官方LINE：<span id="storeLineText">@xxxxxxx</span>
+          公司名稱：<span id="storeNameText">小毛怪寵物生活坊</span><br>
+          營業地址：<span id="storeAddressText">雲林縣斗六市大同路71號</span><br>
+          官方LINE：<span id="storeLineText">@179rnzsy</span>
         </div>
       </div>
     </div>
@@ -906,9 +906,9 @@ ______________________________________________。
     if(storeVetPhoneEl) storeVetPhoneEl.textContent = CFG.storeVetPhone || "電話";
   }catch(e){}
 
-  const LIFF_ID = "2009601071-Rqc2suSI");
-  const GOOGLE_SCRIPT_URL = https://script.google.com/macros/s/AKfycbxO2KHx8UHwA8U6-zuIOpta48X_Xwhe34bv2hig23Yga3OAeBq0ah5sAVNmKfUUMiM/exec|| "");
-  const SHARED_SECRET = 055379690 || "");
+  const LIFF_ID = String(CFG.liffId || "");
+  const GOOGLE_SCRIPT_URL = String(CFG.googleScriptUrl || "");
+  const SHARED_SECRET = String(CFG.sharedSecret || "");
   const STORE_VET_NAME = String(CFG.storeVetName || "XX動物醫院");
   const STORE_VET_ADDRESS = String(CFG.storeVetAddress || "地址");
   const STORE_VET_PHONE = String(CFG.storeVetPhone || "電話");
